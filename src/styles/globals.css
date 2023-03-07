@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: netflixSanNormal;
+    src: url(./netflix-sans-font/NetflixSans-Regular.otf);
+}
+
+* {
+    font-family: netflixSanNormal;
+}
+
+.herosection {
+    background-image: url('../images/image\ 1.png');
+}
