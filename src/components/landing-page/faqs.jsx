@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Faqs() {
 
     const [showAccordion, setShowAccordion] = useState(false);
-    const [accordionNo, setAccordionNo] = useState(0);
+    const [accordionNo, setAccordionNo] = useState('0');
 
     const faqs = [
         {
@@ -44,11 +44,19 @@ export default function Faqs() {
     return (
         <section className="px-[45px] py-[70px] bg-black text-white">
             <h1 className="text-center font-bold lg:text-[50px] sm:text-[2.5rem] text-2xl mb-[52px]">Frequently Asked Questions</h1>
-            <div className="w-7/12 mx-auto mb-[53px]">
+            <div className="w-7/12 mx-auto mb-[53px] h-auto overflow-auto">
                 {
                     faqs.map((faq, i) => (
                         <div key={i} className='mb-[9px]'>
-                            <div className="bg-[#303030] flex justify-between content-center px-[31px] py-[21px] mb-px cursor-pointer" onClick={() => { setShowAccordion(value => !value); setAccordionNo(i) }}>
+                            <div className="bg-[#303030] flex justify-between content-center px-[31px] py-[21px] mb-px cursor-pointer"
+                                onClick={() => {
+                                    if (accordionNo === i) {
+                                        setShowAccordion(value => !value);
+                                    } else {
+                                        setShowAccordion(true)
+                                        setAccordionNo(i)
+                                    }
+                                }}>
                                 <p className="text-[26px]">{faq.question}</p>
                                 <BsPlusLg className={`my-auto text-[30px] ${showAccordion === true && accordionNo === i ? 'hidden' : 'inline'}`} />
                                 <RxCross1 className={`my-auto text-[26px] ${showAccordion === true && accordionNo === i ? 'inline' : 'hidden'}`} />
