@@ -19,7 +19,7 @@ export default function Home() {
         <title>Netflix clone</title>
         <meta name="description" content="Netflix clone app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/4375011_logo_netflix_icon.png" />
       </Head>
       <main>
         <div className="herosection">

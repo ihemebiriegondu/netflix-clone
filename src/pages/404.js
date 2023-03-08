@@ -15,7 +15,7 @@ export default function Custom404() {
             </div>
             <div className="my-auto h-full flex flex-col justify-center bg-black/20">
                 <h1 className="text-white text-[4rem] font-semibold text-center mb-6">Lost your way?</h1>
-                <p className="text-white text-2xl text-center mb-4">Sorry, we can't find that page. You'll find lots to explore on the home page.</p>
+                <p className="text-white text-2xl text-center mb-4">Sorry, we can&apos;t find that page. You&apos;ll find lots to explore on the home page.</p>
                 <div className="flex justify-center">
                     <Link className="bg-white px-[26px] py-[9px] rounded font-semibold font-xl" href='/'>Netflix Home</Link>
                 </div>

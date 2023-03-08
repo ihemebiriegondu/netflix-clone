@@ -11,7 +11,7 @@ export default function Header() {
                     fill
                 />
             </Link>
-            <Link href='/signin' className="sm:px-[17px] px-2 mb-0 leading-[30px] flex flex-col justify-center sm:py-[7px] py-1 bg-primaryRed hover:bg-[#F40612] active:bg-[#E50914] text-white rounded-[3px]">Sign In</Link>
+            <Link href='/signIn' className="sm:px-[17px] px-2 mb-0 leading-[30px] flex flex-col justify-center sm:py-[7px] py-1 bg-primaryRed hover:bg-[#F40612] active:bg-[#E50914] text-white rounded-[3px]">Sign In</Link>
         </header>
     )
 }
