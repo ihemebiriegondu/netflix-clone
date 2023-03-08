@@ -42,9 +42,9 @@ export default function Faqs() {
     ]
 
     return (
-        <section className="px-[45px] py-[70px] bg-black text-white">
+        <section className="sm:px-[45px] py-[70px] bg-black text-white">
             <h1 className="text-center font-bold lg:text-[50px] sm:text-[2.5rem] text-2xl mb-[52px]">Frequently Asked Questions</h1>
-            <div className="w-7/12 mx-auto mb-[53px] h-auto overflow-auto">
+            <div className="xl:w-7/12 lg:w-3/4 sm:w-11/12 w-full mx-auto mb-[53px] h-auto overflow-auto">
                 {
                     faqs.map((faq, i) => (
                         <div key={i} className='mb-[9px]'>
@@ -57,15 +57,15 @@ export default function Faqs() {
                                         setAccordionNo(i)
                                     }
                                 }}>
-                                <p className="text-[26px]">{faq.question}</p>
-                                <BsPlusLg className={`my-auto text-[30px] ${showAccordion === true && accordionNo === i ? 'hidden' : 'inline'}`} />
-                                <RxCross1 className={`my-auto text-[26px] ${showAccordion === true && accordionNo === i ? 'inline' : 'hidden'}`} />
+                                <p className="sm:text-[26px] text-lg">{faq.question}</p>
+                                <BsPlusLg className={`my-auto sm:text-[30px] text-xl ${showAccordion === true && accordionNo === i ? 'hidden' : 'inline'}`} />
+                                <RxCross1 className={`my-auto sm:text-[26px] text-lg ${showAccordion === true && accordionNo === i ? 'inline' : 'hidden'}`} />
                             </div>
                             {
                                 showAccordion && (
                                     <div className={`bg-[#303030] px-[31px] py-[21px] transition-all duration-500 ease-in-out delay-150 ${accordionNo === i ? 'visible transition-all duration-500 ease-in-out delay-150' : 'invisible hidden transition-all duration-500 ease-in-out delay-150'}`}>
-                                        <p className="text-[26px] mb-[21px]">{faq.answer}</p>
-                                        <p className="text-[26px]">{faq.answer2}</p>
+                                        <p className="sm:text-[26px] text-lg mb-[21px]">{faq.answer}</p>
+                                        <p className="sm:text-[26px] text-lg">{faq.answer2}</p>
                                     </div>
                                 )
                             }
