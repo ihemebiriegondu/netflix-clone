@@ -7,6 +7,8 @@ import ValueProp1 from '@/components/landing-page/valueProp1'
 import ValueProp2 from '@/components/landing-page/valueProps2'
 import ValueProp3 from '@/components/landing-page/valueProps3'
 import ValueProp4 from '@/components/landing-page/valueProp4'
+import Faqs from '@/components/landing-page/faqs'
+import Footer from '@/components/landing-page/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +35,9 @@ export default function Home() {
         <Separator />
         <ValueProp4 />
         <Separator />
+        <Faqs />
+        <Separator />
+        <Footer />
       </main>
     </>
   )
