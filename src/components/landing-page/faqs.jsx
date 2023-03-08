@@ -44,11 +44,11 @@ export default function Faqs() {
     return (
         <section className="sm:px-[45px] py-[70px] bg-black text-white">
             <h1 className="text-center font-bold lg:text-[50px] sm:text-[2.5rem] text-2xl mb-[52px]">Frequently Asked Questions</h1>
-            <div className="xl:w-7/12 lg:w-3/4 sm:w-11/12 w-full mx-auto mb-[53px] h-auto overflow-auto">
+            <div className="xl:w-7/12 lg:w-3/4 sm:w-11/12 w-full mx-auto sm:mb-[53px] mb-[22.5px]">
                 {
                     faqs.map((faq, i) => (
                         <div key={i} className='mb-[9px]'>
-                            <div className="bg-[#303030] flex justify-between content-center px-[31px] py-[21px] mb-px cursor-pointer"
+                            <div className="bg-[#303030] flex justify-between content-center sm:px-[31px] px-[21.6px] sm:py-[21px] py-[14.4px] mb-px cursor-pointer"
                                 onClick={() => {
                                     if (accordionNo === i) {
                                         setShowAccordion(value => !value);
@@ -63,7 +63,7 @@ export default function Faqs() {
                             </div>
                             {
                                 showAccordion && (
-                                    <div className={`bg-[#303030] px-[31px] py-[21px] transition-all duration-500 ease-in-out delay-150 ${accordionNo === i ? 'visible transition-all duration-500 ease-in-out delay-150' : 'invisible hidden transition-all duration-500 ease-in-out delay-150'}`}>
+                                    <div className={`bg-[#303030] px-[31px] transition-all duration-500 ease-in-out ${accordionNo === i ? 'h-auto py-[21px] transition-all duration-500 ease-in-out delay-150' : 'h-0 overflow-hidden transition-all duration-100 ease-in-out'}`}>
                                         <p className="sm:text-[26px] text-lg mb-[21px]">{faq.answer}</p>
                                         <p className="sm:text-[26px] text-lg">{faq.answer2}</p>
                                     </div>
@@ -73,8 +73,8 @@ export default function Faqs() {
                     ))
                 }
             </div>
-            <div className="mb-[70px] flex flex-col justify-center content-center">
-                <p className="lg:text-[19px] sm:text-[23px] text-[18px] text-center mb-[19px]">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div className="mb-[70px] flex flex-col justify-center content-center mx-auto 2xl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-7/12 sm:">
+                <p className="lg:text-[19px] sm:text-[23px] text-[18px] text-center mb-[19px] sm:w-full w-10/12 mx-auto">Ready to watch? Enter your email to create or restart your membership.</p>
                 <div className="2xl:w-2/3 xl:w-3/4 lg:w-10/12 w-11/12 flex lg:flex-row flex-col justify-center mx-auto">
                     <input type="email" placeholder="Email address" className="lg:w-3/5 lg:mb-0 mb-[10px] w-full px-[8px] lg:py-[25px] py-[10px] rounded-tl-[2px] rounded-bl-[2px] border border-[#8C8C8C] outline-none hover:outline-none text-black" />
                     <button className="flex content-center w-auto lg:mx-0 mx-auto bg-primaryRed hover:bg-[#F40612] active:bg-[#E50914] text-white lg:py-[16px] lg:px-[31px] px-4 py-2 rounded-tr-[2px] rounded-br-[2px] shadow-[0px_1px_0px_rgba(0,0,0,0.45)]">
