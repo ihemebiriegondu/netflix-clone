@@ -15,3 +15,8 @@
 .herosection {
     background-image: url('../images/nigNetflixbg.jpg');
 }
+
+.error {
+    background-image: url('../images/lostinspace.jpg');
+    background-size: cover;
+}
