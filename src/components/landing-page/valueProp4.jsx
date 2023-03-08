@@ -10,7 +10,7 @@ export default function ValueProp4() {
                 </div>
                 <div className="relative lg:w-[530px] sm:w-2/3 w-full lg:mx-0 mx-auto lg:h-[398px] h-[400px] sm:mt-0">
                     <Image className="md:object-cover object-scale-down absolute top-0 bottom-0 w-full h-full"
-                        src='/assets/Frame 7.png'
+                        src='/assets/nigkids.png'
                         alt="netflix logo"
                         fill
                     />

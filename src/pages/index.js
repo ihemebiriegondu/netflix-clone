@@ -23,8 +23,10 @@ export default function Home() {
       </Head>
       <main>
         <div className="herosection">
-          <Header />
-          <Herosection />
+          <div className='bg-black/60'>
+            <Header />
+            <Herosection />
+          </div>
         </div>
         <Separator />
         <ValueProp1 />
