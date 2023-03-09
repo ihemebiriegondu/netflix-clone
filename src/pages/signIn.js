@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "@/components/signin/header";
+import Form from "@/components/signin/form";
 
 
 export default function signIn() {
@@ -11,9 +12,10 @@ export default function signIn() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/4375011_logo_netflix_icon.png" />
             </Head>
-            <main className="absolute top-0 bottom-0 w-full herosection">
-                <div className="absolute h-full w-full bg-black/60">
+            <main className="h-full herosection">
+                <div className="sm:bg-black/60 bg-black pb-[90px]">
                     <Header />
+                    <Form />
                 </div>
             </main>
         </>
