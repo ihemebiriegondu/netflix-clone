@@ -19,7 +19,7 @@ export default function Form() {
             </form>
             <div className="pt-4">
                 <p className="text-[#B3B3B3] mb-[14px]">New to Netflix? <span className="text-white">Sign up now</span>.</p>
-                <p className="text-[#B3B3B3] text-[13px]">This page is protected by Google reCAPTCHA to ensure you're not a bot. <Link href='' className="text-[#0071EB]">Learn more.</Link></p>
+                <p className="text-[#B3B3B3] text-[13px]">This page is protected by Google reCAPTCHA to ensure you&apos;re not a bot. <Link href='' className="text-[#0071EB]">Learn more.</Link></p>
             </div>
         </div>
     )

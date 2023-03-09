@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/signin/header";
 import Form from "@/components/signin/form";
+import Footer from "@/components/landing-page/footer";
 
 
 export default function signIn() {
@@ -16,6 +17,7 @@ export default function signIn() {
                 <div className="sm:bg-black/60 bg-black pb-[90px]">
                     <Header />
                     <Form />
+                    <Footer />
                 </div>
             </main>
         </>
