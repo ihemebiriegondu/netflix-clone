@@ -1,7 +1,11 @@
+import { useState } from "react"
 import Link from "next/link"
 
 
 export default function Form() {
+
+    const [checked, setChecked] = useState(true);
+
     return (
         <div className="sm:bg-black/75 bg-black sm:w-[450px] w-full mx-auto sm:pt-[60px] pt-[20px] pb-[143px] md:px-[68px] sm:px-[34.75px] px-[16px]">
             <form className="sm:mb-[46px] mb-[16px]">
@@ -11,7 +15,7 @@ export default function Form() {
                 <button className="text-white bg-primaryRed hover:bg-[#F40612] active:bg-[#E50914] mb-[15px] shadow-[0px_1px_0px_rgba(0,0,0,0.55)] font-bold py-[1rem] px-4 w-full rounded-[4px]">Sign In</button>
                 <div className="flex justify-between">
                     <div className="flex">
-                        <input type="checkbox" name="" id="" className="accent-[#B3B3B3] w-[18px] h-[21.6px] mr-2" />
+                        <input type="checkbox" name="" checked={checked} onChange={() => { setChecked(value => !value) }} id="" className="accent-[#B3B3B3] w-[18px] h-[21.6px] mr-2" />
                         <p className="text-[#B3B3B3] text-[13px]">Remember me</p>
                     </div>
                     <p className="text-[#B3B3B3] text-[13px]">Need help?</p>

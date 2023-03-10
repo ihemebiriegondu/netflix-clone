@@ -8,12 +8,17 @@
     src: url(./netflix-sans-font/NetflixSans-Regular.otf);
 }
 
+@font-face {
+    font-family: netflixSanBold;
+    src: url(./netflix-sans-font/NetflixSans-Bold.otf);
+}
+
 * {
     font-family: netflixSanNormal;
 }
 
 .herosection {
-    background-image: url('../images/nigNetflixbg.jpg');
+    background-image: url('../images/netflix-hero.jpg');
 }
 
 .error {

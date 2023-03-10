@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { BsGlobe2, BsFillCaretDownFill } from 'react-icons/bs'
 
 
 export default function Footer() {
@@ -59,6 +60,11 @@ export default function Footer() {
                         <li className="mb-[15px]"><Link href='/'>Contact Us</Link></li>
                         <li className="mb-[15px]"><Link href='/'>Legal Notices</Link></li>
                     </ul>
+                </div>
+                <div className="flex content-center border border-[#8C8C8C] text-white rounded-[2px] w-fit mb-6 px-4 py-1">
+                    <BsGlobe2 className="mt-1 mr-2" />
+                    <p className="mb-0">English</p>
+                    <BsFillCaretDownFill className="mt-[6px] ml-2 text-[13px]" />
                 </div>
                 <p className="text-[13px]">Netflix Nigeria</p>
             </div>
