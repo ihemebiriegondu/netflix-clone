@@ -10,10 +10,34 @@ export default function ValueProp2() {
                 </div>
                 <div className="relative lg:w-[530px] sm:w-2/3 w-full lg:mx-0 mx-auto lg:h-[398px] h-[400px] sm:mt-0">
                     <Image className="md:object-cover object-scale-down absolute top-0 bottom-0 w-full h-full"
-                        src='/assets/Frame.png'
-                        alt="netflix logo"
+                        src='/assets/strangerthings.jpg'
+                        alt="stranger things"
                         fill
                     />
+                    <div className="absolute bottom-[27px] w-full h-[104px] z-20">
+                        <div className="flex justify-between content-center lg:w-[330px] sm:w-[384px] w-[270px] mx-auto py-[10px] px-[14px] bg-black border border-2 border-[rgba(255,255,255,0.25)] shadow-[0px_0px_32px_#000000] rounded-[12px]">
+                            <div className="flex content-center">
+                                <div className="md:h-[4.5rem] sm:h-[4rem] h-[3rem] w-[53px] mr-[16.35px] relative">
+                                    <Image className="md:object-cover object-scale-down absolute top-0 bottom-0 w-full h-full"
+                                        src='/assets/boxshot.png'
+                                        alt="stranger things"
+                                        fill
+                                    />
+                                </div>
+                                <div className="my-auto">
+                                    <p className="sm:text-base text-sm">Stranger Things</p>
+                                    <p className="sm:text-sm text-xs text-[#0071EB]">Downloading...</p>
+                                </div>
+                            </div>
+                            <div className="lg:h-[3.75rem] h-[3rem] w-[3rem] relative my-auto">
+                                <Image className="md:object-cover object-scale-down absolute top-0 bottom-0 w-full h-full"
+                                    src='/assets/download-icon.gif'
+                                    alt="stranger things"
+                                    fill
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
