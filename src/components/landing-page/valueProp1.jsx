@@ -10,10 +10,13 @@ export default function ValueProp1() {
                 </div>
                 <div className="relative lg:w-[530px] sm:w-2/3 w-full lg:mx-0 mx-auto lg:h-[398px] h-[400px] sm:mt-0">
                     <Image className="md:object-cover object-scale-down absolute top-0 bottom-0 w-full h-full"
-                        src='/assets/television.png'
+                        src='/assets/tv.png'
                         alt="enjoy on your tv image"
                         fill
                     />
+                    <video autoPlay loop className='w-9/12 m-auto h-full'>
+                        <source src="/assets/video.m4v" />
+                    </video>
                 </div>
             </div>
         </section>
