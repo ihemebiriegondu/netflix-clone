@@ -93,8 +93,8 @@ export default function Faqs() {
                         <span className="mr-3 md:text-2xl text-lg md:font-black font-bold">Get Started</span>
                         <span className="relative md:w-[9.22px] w-[8px] md:h-[20.36px] h-[15px] flex justify-center mt-2 font-black">
                             <Image className="object-scale-down absolute top-0 bottom-0 w-full h-full"
-                                src='/assets/Vector (1).png'
-                                alt="netflix logo"
+                                src='/assets/Vector.png'
+                                alt="next icon"
                                 fill
                             />
                         </span>
